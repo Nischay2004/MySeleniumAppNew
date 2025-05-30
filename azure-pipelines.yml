@@ -16,5 +16,5 @@ steps:
 - script: mvn clean install
   displayName: 'Run a multi-line script'
 
-- script: java -jar target/MySeleniumAppNew-1.0-SNAPSHOT.jar
+- script: mvn exec:java -Dexec.mainClass="com.example.App"
   displayName: 'Run the JAR file'
